@@ -1,0 +1,116 @@
+{
+    "eco" : {
+        "prefix" : "eco",
+        "body" : [
+            "echo \"$0\";"
+        ],
+        "description" : "Echoes a double quoted string."
+    },
+    "fore" : {
+        "prefix" : "fore",
+        "body" : [
+            "foreach ($1 as $2) {",
+            "\t$0",
+            "}"
+        ],
+        "description" : "Iterates trough an array's values."
+    },
+    "forek" : {
+        "prefix" : "forek",
+        "body" : [
+            "foreach ($1 as $2 => $3) {",
+            "\t$0",
+            "}"
+        ],
+        "description" : "Iterates trough an array's keys => values."
+    },
+    "inc" : {
+        "prefix" : "inc",
+        "body" : [
+            "include \"$0\";"
+        ],
+        "description" : "Includes a file."
+    },
+    "inco" : {
+        "prefix" : "inco",
+        "body" : [
+            "include_once \"$0\";"
+        ],
+        "description" : "Includes a file once."
+    },
+    "prif" : {
+        "prefix" : "prif",
+        "body" : [
+            "private function ${1:FunctionName}($2){",
+            "\t$0",
+            "}"
+        ],
+        "description" : "Creates a private function."
+    },
+    "prisf" : {
+        "prefix" : "prisf",
+        "body" : [
+            "private static function ${1:FunctionName}($2){",
+            "\t$0",
+            "}"
+        ],
+        "description" : "Creates a private static function."
+    },
+    "prof" : {
+        "prefix" : "prof",
+        "body" : [
+            "protected function ${1:FunctionName}($2){",
+            "\t$0",
+            "}"
+        ],
+        "description" : "Creates a protected function."
+    },
+    "prosf" : {
+        "prefix" : "prosf",
+        "body" : [
+            "protected static function ${1:FunctionName}($2){",
+            "\t$0",
+            "}"
+        ],
+        "description" : "Creates a protected static function."
+    },
+    "pubf" : {
+        "prefix" : "pubf",
+        "body" : [
+            "public function ${1:FunctionName}($2){",
+            "\t$0",
+            "}"
+        ],
+        "description" : "Creates a public function."
+    },
+    "pubsf" : {
+        "prefix" : "pubsf",
+        "body" : [
+            "public static function ${1:FunctionName}($2){",
+            "\t$0",
+            "}"
+        ],
+        "description" : "Creates a public static function."
+    },
+    "rqr" : {
+        "prefix" : "rqr",
+        "body" : [
+            "require \"$0\";"
+        ],
+        "description" : "Requires a file."
+    },
+    "rqro" : {
+        "prefix" : "rqro",
+        "body" : [
+            "require_once \"$0\";"
+        ],
+        "description" : "Requires a file once."
+    },
+    "thr" : {
+        "prefix" : "thr",
+        "body" : [
+            "throw new ${1:Exception(\"${0:Error Processing Request}\");}"
+        ],
+        "description" : "Throws new something (by default, an Exception)."
+    }
+}
