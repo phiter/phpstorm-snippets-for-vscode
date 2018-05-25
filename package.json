@@ -17,7 +17,7 @@
     "categories": [
         "Snippets"
     ],
-    "icon": "images/phpstorm-icon",
+    "icon": "images/phpstorm-icon.png",
     "galleryBanner": {
         "color": "#b345f1",
         "theme": "dark"
