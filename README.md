@@ -2,7 +2,7 @@
 
 This extension aims to provide the PHP Live Templates that come by default in new PHPStorm installations for Visual Studio Code.
 
-![](images\demo.gif)
+![](images/demo.gif)
 
 ## Usage
 
@@ -33,7 +33,7 @@ Type part of a snippet, press <kbd>Enter</kbd> (or <kbd>Tab</kbd> if you have `e
 
     See:
 
-    ![](images\autocompletion-issue.gif)
+    ![](images/autocompletion-issue.gif)
 
  This is a [known VSCode issue](https://github.com/Microsoft/vscode/issues/45716) and [this answer on StackOverflow](https://stackoverflow.com/a/43632288/4802649) offers a fix.
 
