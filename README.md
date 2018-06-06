@@ -43,4 +43,4 @@ Type part of a snippet, press <kbd>Enter</kbd> (or <kbd>Tab</kbd> if you have `e
 
 ## License
 
-[MIT License](./LICENSE)
+[MIT License](./LICENSE.md)
