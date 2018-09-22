@@ -4,113 +4,113 @@
         "body" : [
             "echo \"$0\";"
         ],
-        "description" : "Echoes a double quoted string."
+        "description" : "'echo' statement"
     },
     "fore" : {
         "prefix" : "fore",
         "body" : [
-            "foreach ($1 as $2) {",
+            "foreach ($1 as $${2:item}) {",
             "\t$0",
             "}"
         ],
-        "description" : "Iterates trough an array's values."
+        "description" : "foreach(iterable_expr as $value) {...}"
     },
     "forek" : {
         "prefix" : "forek",
         "body" : [
-            "foreach ($1 as $2 => $3) {",
+            "foreach ($1 as $${2:key} => $${3:index}) {",
             "\t$0",
             "}"
         ],
-        "description" : "Iterates trough an array's keys => values."
+        "description" : "foreach(iterable_expr as $key => $value) {...}"
     },
     "inc" : {
         "prefix" : "inc",
         "body" : [
             "include \"$0\";"
         ],
-        "description" : "Includes a file."
+        "description" : "'include' statement"
     },
     "inco" : {
         "prefix" : "inco",
         "body" : [
             "include_once \"$0\";"
         ],
-        "description" : "Includes a file once."
+        "description" : "'include_once' statement"
     },
     "prif" : {
         "prefix" : "prif",
         "body" : [
-            "private function ${1:FunctionName}($2){",
+            "private function $1($2){",
             "\t$0",
             "}"
         ],
-        "description" : "Creates a private function."
+        "description" : "private function."
     },
     "prisf" : {
         "prefix" : "prisf",
         "body" : [
-            "private static function ${1:FunctionName}($2){",
+            "private static function $1($2){",
             "\t$0",
             "}"
         ],
-        "description" : "Creates a private static function."
+        "description" : "private static function."
     },
     "prof" : {
         "prefix" : "prof",
         "body" : [
-            "protected function ${1:FunctionName}($2){",
+            "protected function $1($2){",
             "\t$0",
             "}"
         ],
-        "description" : "Creates a protected function."
+        "description" : "protected function."
     },
     "prosf" : {
         "prefix" : "prosf",
         "body" : [
-            "protected static function ${1:FunctionName}($2){",
+            "protected static function $1($2){",
             "\t$0",
             "}"
         ],
-        "description" : "Creates a protected static function."
+        "description" : "protected static function."
     },
     "pubf" : {
         "prefix" : "pubf",
         "body" : [
-            "public function ${1:FunctionName}($2){",
+            "public function $1($2){",
             "\t$0",
             "}"
         ],
-        "description" : "Creates a public function."
+        "description" : "public function."
     },
     "pubsf" : {
         "prefix" : "pubsf",
         "body" : [
-            "public static function ${1:FunctionName}($2){",
+            "public static function $1($2){",
             "\t$0",
             "}"
         ],
-        "description" : "Creates a public static function."
+        "description" : "public static function."
     },
     "rqr" : {
         "prefix" : "rqr",
         "body" : [
             "require \"$0\";"
         ],
-        "description" : "Requires a file."
+        "description" : "'require' statement"
     },
     "rqro" : {
         "prefix" : "rqro",
         "body" : [
             "require_once \"$0\";"
         ],
-        "description" : "Requires a file once."
+        "description" : "'require_once' statement"
     },
     "thr" : {
         "prefix" : "thr",
         "body" : [
-            "throw new ${1:Exception(\"${0:Error Processing Request}\");}"
+            "throw new ${1:\\Exception}(\"${2:Error Processing Request}\");"
         ],
-        "description" : "Throws new something (by default, an Exception)."
+        "description" : "throw new"
     }
 }
