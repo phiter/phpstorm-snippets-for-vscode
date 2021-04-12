@@ -1,3 +1,7 @@
-# Change Log
+# Changelog
 
-Initially I have no intention of changing this extension as it already has all the default PHPStorm Live Templates. If Jetbrains include more by default in future versions, I might update the extension.
+## 1.1.1
+
+### Fixed
+
+    - Functions will have the opening bracket in the next line in accordance to PSR-12.
